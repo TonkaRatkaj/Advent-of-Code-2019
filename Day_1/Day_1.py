@@ -2,7 +2,10 @@
 
 def fuel_requirements(x):
 	fr = int(x/3) - 2
-	return fr
+	if (fr>0):
+		return fr + fuel_requirements(fr)
+	else:
+		return 0
 
 f = open("in_day_1.txt")
 masses = f.readlines()
