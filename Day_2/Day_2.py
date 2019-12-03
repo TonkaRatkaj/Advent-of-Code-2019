@@ -4,7 +4,7 @@ f = open("in_day_2.txt")
 lines = f.readlines()
 array = lines[0].strip().split(",")
 array = [int(i) for i in array]
-kopija = array.copy()
+
 
 array[1] = 12
 array[2] = 2
